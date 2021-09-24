@@ -16,4 +16,10 @@ public class MemberServiceImpl implements MemberService {
 	public void memberJoin(MemberVO member) throws Exception {
 		memberMapper.memberJoin(member);
 	}
+
+	@Override
+	public int idCheck(String memberId) throws Exception {
+		return memberMapper.idCheck(memberId);
+	}
+
 }
